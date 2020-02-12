@@ -1,0 +1,14 @@
+body {
+    background-color: antiquewhite;
+    padding: 50px 0;
+}
+.profile-links .icons a {
+    transition: transform 1s linear;
+}
+.profile-links .icons a:hover img {
+    transform: translate(0, -10px);
+}
+.profile-links .icons a:hover div{
+    visibility: visible;
+    box-shadow: 0px 15px 8px 2px #000000;
+}
