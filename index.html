@@ -2,24 +2,64 @@
 <html>
     <head>
         <link href="./styles.css" rel="stylesheet">
+        <link rel="icon" href="assets/logo.png" type="image/png" sizes="16x16">
         <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
         <title>P or t fo l io</title>
+        <script>
+
+            window.onscroll = function () { scrollFunction() };
+
+            function scrollFunction() {
+                var mybutton = document.getElementById("scrollTop");
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
     </head>
     <body>
-        <div class="">
-            <article>Article</article>
-        </div>
-        <section class="edu-tree flex flex-wrap w-1/2">
+        <header class="absolute top-0 w-full flex font-black text-white text-lg">
+            <div class="flex-1 p-10 md:hidden lg:block"></div>
+            <div class="scroll-links flex flex-1 md:justify-around">
+                <p class="p-10">Knowledge</p>
+                <p class="p-10"><a href="#edu-tree">Experience</a></p>
+                <p class="p-10"><a href="#links">Profiles</a></p>
+                <p class="p-10"><a href="#hobbies">Hobbies</a></p>
+            </div>
+        </header>
+        <img src="assets/home.jpg" class="w-full h-screen"/>
+        <h1 class="absolute text-white text-6xl ml-12 font-black">I am a <b class="px-3 py-2 text-black">Web Developer</b></h1>
+        <section class="my-10">
+            <p id="hobbies" class="text-center  m-4 font-black text-3xl">Knowledge</p>
+            <article class="flex justify-between">
+                <img src="assets/knowledge/HTML.png" class="h-12 w-12" title="HTML" alt="HTML" />
+                <img src="assets/knowledge/CSS.svg" class="h-12 w-12" title="CSS" alt="CSS" />
+                <img src="assets/knowledge/javascript.svg" class="h-12 w-12" title="Javascript" alt="Javascript" />
+                <img src="assets/knowledge/ANGULAR.svg" class="h-12 w-12" title="Angular" alt="Angular" />
+                <img src="assets/knowledge/REACT.png" class="h-12 w-12" title="React" alt="React" />
+                <img src="assets/knowledge/typescript.svg" class="h-12 w-12" title="Typescript" alt="Typescript" />
+                <img src="assets/knowledge/LESS.png" class="h-12 w-12" title="Less" alt="Less" />
+                <img src="assets/knowledge/SASS.png" class="h-12 w-12" title="Sass" alt="Sass" />
+                <img src="assets/knowledge/BOOTSTRAP.png" class="h-12 w-12" title="Bootstrap" alt="Bootstrap" />
+                <img src="assets/knowledge/TAILWIND.png" class="h-12 w-12" title="Tailwind" alt="tailwind" />
+            </article>
+        </section>
+        <section id="edu-tree" class="edu-tree flex flex-wrap w-1/2 m-auto">
             <div class="w-1/2"></div>
             <div class="w-1/2 border-l-4 border-black">
                 <div class="w-full">
                     <div class="bg-white p-8">
                         <div>
-                            <p class="text-sm text-gray-600">
-                                10th
-                            </p>
-                            <div class="text-gray-900 font-bold text-xl mb-2">Can coffee make you a better developer?</div>
-                            <p class="text-gray-700">Caffeine in coffee will boost your metabolism and prevents sleep.</p>
+                            <p class="text-sm text-gray-600">Pramati Technologies.</p>
+                            <div class="text-gray-900 font-bold text-xl mb-2">Senior Development Engineer.</div>
+                            <p class="text-gray-700 mb-1">Working on Product creation and UI development for a client project in Angular framework.</p>
+                            <p class="text-sm text-gray-500 italic">Oct 2019.</p>
                         </div>
                     </div>
                 </div>
@@ -28,11 +68,10 @@
                 <div class="w-full">
                     <div class="bg-white p-8">
                         <div>
-                            <p class="text-sm text-gray-600">
-                                12th
-                            </p>
-                            <div class="text-gray-900 font-bold text-xl mb-2">Can coffee make you a better developer?</div>
-                            <p class="text-gray-700">Caffeine in coffee will boost your metabolism and prevents sleep.</p>
+                            <p class="text-sm text-gray-600">HCL Technologies.</p>
+                            <div class="text-gray-900 font-bold text-xl mb-2">Lead Engineer.</div>
+                            <p class="text-gray-700 mb-1">Worked on website development and feature enhancement of an employee business accounting website for client Caterpillar.</p>
+                            <p class="text-sm text-gray-500 italic">Oct 2017 - Oct 2019.</p>
                         </div>
                     </div>
                 </div>
@@ -43,11 +82,10 @@
                 <div class="w-full">
                     <div class="bg-white p-8">
                         <div>
-                            <p class="text-sm text-gray-600">
-                                College
-                            </p>
-                            <div class="text-gray-900 font-bold text-xl mb-2">Can coffee make you a better developer?</div>
-                            <p class="text-gray-700">Caffeine in coffee will boost your metabolism and prevents sleep.</p>
+                            <p class="text-sm text-gray-600">Syncfusion Software Private Limited.</p>
+                            <div class="text-gray-900 font-bold text-xl mb-2">Software Engineer Level 3.</div>
+                            <p class="text-gray-700 mb-1">Developed jQuery widgets as individual products and also provided the product features in many frameworks like Angular, React, Ember, etc.,</p>
+                            <p class="text-sm text-gray-500 italic">Oct 2014 - Oct 2017.</p>
                         </div>
                     </div>
                 </div>
@@ -56,11 +94,10 @@
                 <div class="w-full">
                     <div class="bg-white p-8">
                         <div>
-                            <p class="text-sm text-gray-600">
-                                Syncfusion
-                            </p>
-                            <div class="text-gray-900 font-bold text-xl mb-2">Can coffee make you a better developer?</div>
-                            <p class="text-gray-700">Caffeine in coffee will boost your metabolism and prevents sleep.</p>
+                            <p class="text-sm text-gray-600">College</p>
+                            <div class="text-gray-900 font-bold text-xl mb-2">6.78 CGPA.</div>
+                            <p class="text-gray-700">Saranathan College Of Engineering.</p>
+                            <p class="text-sm text-gray-500 italic">Passed out 2014.</p>
                         </div>
                     </div>
                 </div>
@@ -71,11 +108,10 @@
                 <div class="w-full">
                     <div class="bg-white p-8">
                         <div>
-                            <p class="text-sm text-gray-600">
-                                HCL - Caterpillar
-                            </p>
-                            <div class="text-gray-900 font-bold text-xl mb-2">Can coffee make you a better developer?</div>
-                            <p class="text-gray-700">Caffeine in coffee will boost your metabolism and prevents sleep.</p>
+                            <p class="text-sm text-gray-600">Higher Secondary</p>
+                            <div class="text-gray-900 font-bold text-xl mb-2">81.5 percentage.</div>
+                            <p class="text-gray-700">Vidhyaa Vikas Matriculation Higher Secondary School.</p>
+                            <p class="text-sm text-gray-500 italic">Passed out 2010.</p>
                         </div>
                     </div>
                 </div>
@@ -84,18 +120,17 @@
                 <div class="w-full">
                     <div class="bg-white p-8">
                         <div>
-                            <p class="text-sm text-gray-600">
-                                Pramati
-                            </p>
-                            <div class="text-gray-900 font-bold text-xl mb-2">Can coffee make you a better developer?</div>
-                            <p class="text-gray-700">Caffeine in coffee will boost your metabolism and prevents sleep.</p>
+                            <p class="text-sm text-gray-600">SSLC</p>
+                            <div class="text-gray-900 font-bold text-xl mb-2">81.6 percentage.</div>
+                            <p class="text-gray-700">Vidhyaa Vikas Matriculation Higher Secondary School.</p>
+                            <p class="text-sm text-gray-500 italic">Passed out 2008.</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="w-1/2 border-l-4 border-black"></div>
         </section>
-        <section class="profile-links">
+        <section id="links" class="profile-links">
             <p class="text-center  m-4 font-black text-3xl">Profile Links</p>
             <div class="icons flex justify-around">
                 <a href="https://dev.to/koushikrsk" target="_blank"><img src="assets/devto.svg" alt="dev.to" class="w-10 h-10 cursor-pointer bg-white" /><div class="rounded-full w-10 invisible"></div></a>
@@ -107,12 +142,23 @@
                 <a href="https://www.codingame.com/profile/ff123eb4d78a84d9c5586e5647d2fe2d3230143" target="_blank"><img src="assets/codingame.svg" alt="codingame" class="w-10 h-10 cursor-pointer bg-white" /><div class="rounded-full w-10 invisible"></div></a>
             </div>
         </section>
-        <p class="text-center  m-4 font-black text-3xl">Hobbies</p>
+        <p id="hobbies" class="text-center  m-4 font-black text-3xl">Hobbies</p>
         <section class="hobbies flex justify-around">
             <img src="assets/keyboard.svg" class="h-12 w-12" />
             <img src="assets/paint.svg" class="h-12 w-12" />
             <img src="assets/story.svg" class="h-12 w-12" />
             <img src="assets/travel.png" class="h-12 w-12" />
         </section>
+        <button id="scrollTop" class="hidden rounded-full fixed w-12 h-12 focus:outline-none" onclick="topFunction()">
+            <img src="assets/system.svg" />
+        </button>
+        <footer class="bg-black h-32 mt-12 text-white text-center">
+            <pre>
+            Koushik
+            rskkoushik@gmail.com
+            +91-9003443422
+            </pre>
+            
+        </footer>
     </body>
 </html>

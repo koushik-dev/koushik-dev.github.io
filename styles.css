@@ -1,6 +1,17 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color: antiquewhite;
-    padding: 50px 0;
+}
+body header {
+    background: rgba(59, 59, 59, 0.5)
+}
+body h1 {
+    top: 50vh;
+}
+body h1 b {
+    background-color: rgba(181, 181, 181, 0.5);
 }
 .profile-links .icons a {
     transition: transform 1s linear;
@@ -11,4 +22,8 @@ body {
 .profile-links .icons a:hover div{
     visibility: visible;
     box-shadow: 0px 15px 8px 2px #000000;
+}
+#scrollTop {
+    bottom: 10px;
+    right: 20px;
 }
