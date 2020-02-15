@@ -33,22 +33,34 @@
                 <p class="p-10"><a href="#hobbies">Hobbies</a></p>
             </div>
         </header>
-        <img src="assets/home.jpg" class="w-full h-screen"/>
+        <img src="assets/home.jpg" class="w-full lg:h-screen"/>
         <h1 class="absolute text-white text-6xl ml-12 font-black">I am a <b class="px-3 py-2 text-black">Web Developer</b></h1>
-        <section class="my-10">
+        <section class="my-10 px-10">
             <p id="hobbies" class="text-center  m-4 font-black text-3xl">Knowledge</p>
-            <article class="flex justify-between">
-                <img src="assets/knowledge/HTML.png" class="h-12 w-12" title="HTML" alt="HTML" />
-                <img src="assets/knowledge/CSS.svg" class="h-12 w-12" title="CSS" alt="CSS" />
-                <img src="assets/knowledge/javascript.svg" class="h-12 w-12" title="Javascript" alt="Javascript" />
-                <img src="assets/knowledge/ANGULAR.svg" class="h-12 w-12" title="Angular" alt="Angular" />
-                <img src="assets/knowledge/REACT.png" class="h-12 w-12" title="React" alt="React" />
-                <img src="assets/knowledge/typescript.svg" class="h-12 w-12" title="Typescript" alt="Typescript" />
-                <img src="assets/knowledge/LESS.png" class="h-12 w-12" title="Less" alt="Less" />
-                <img src="assets/knowledge/SASS.png" class="h-12 w-12" title="Sass" alt="Sass" />
-                <img src="assets/knowledge/BOOTSTRAP.png" class="h-12 w-12" title="Bootstrap" alt="Bootstrap" />
-                <img src="assets/knowledge/TAILWIND.png" class="h-12 w-12" title="Tailwind" alt="tailwind" />
+            <article class="flex justify-between flex-wrap flex-col h-64">
+                <span class="h-12 w-12 m-5 order-1" ><img src="assets/knowledge/HTML.png"title="HTML" alt="HTML" />HTML</span>
+                <span class="h-12 w-12 m-5 order-3" ><img src="assets/knowledge/CSS.svg" title="CSS" alt="CSS" />CSS</span>
+                <span class="h-12 w-12 m-5 order-5" ><img src="assets/knowledge/javascript.svg" title="Javascript" alt="Javascript" />Javascript</span>
+                <span class="h-12 w-12 m-5 order-7" ><img src="assets/knowledge/ANGULAR.svg" title="Angular" alt="Angular" />Angular</span>
+                <span class="h-12 w-12 m-5 order-9" ><img src="assets/knowledge/REACT.png" title="React" alt="React" />React</span>
+                <span class="h-12 w-12 m-5 order-2" ><img src="assets/knowledge/typescript.svg" title="Typescript" alt="Typescript" />Typescript</span>
+                <span class="h-12 w-12 m-5 order-4" ><img src="assets/knowledge/LESS.png" title="Less" alt="Less" />Less</span>
+                <span class="h-12 w-12 m-5 order-6" ><img src="assets/knowledge/SASS.png" title="Sass" alt="Sass" />Sass</span>
+                <span class="h-12 w-12 m-5 order-8" ><img src="assets/knowledge/BOOTSTRAP.png" title="Bootstrap" alt="Bootstrap" />Bootstrap</span>
+                <span class="h-12 w-12 m-5 order-10" ><img src="assets/knowledge/TAILWIND.png" title="Tailwind" alt="tailwind" />Tailwind</span>
             </article>
+        </section>
+        <section id="links" class="profile-links">
+            <p class="text-center  m-4 font-black text-3xl">Profile Links</p>
+            <div class="icons flex justify-around">
+                <a href="https://dev.to/koushikrsk" target="_blank"><img src="assets/devto.svg" alt="dev.to" class="w-10 h-10 cursor-pointer bg-white" /><div class="rounded-full w-10 invisible"></div></a>
+                <a href="https://twitter.com/koushikrsk" target="_blank"><img src="assets/twitter.svg" alt="twitter" class="w-10 h-10 cursor-pointer bg-transparent" /><div class="rounded-full w-10 invisible"></div></a>
+                <a href="https://www.hackerrank.com/Koushik_R" target="_blank"><img src="assets/HackerRank_logo.png" alt="hackerrank" class="w-10 h-10 cursor-pointer bg-transparent" /><div class="rounded-full w-10 invisible"></div></a>
+                <a href="https://github.com/koushik-dev" target="_blank"><img src="assets/github.svg" alt="github" class="w-10 h-10 cursor-pointer bg-white rounded-full" /><div class="rounded-full w-10 invisible"></div></a>
+                <a href="https://in.linkedin.com/in/koushik-r-a36a9390" target="_blank"><img src="assets/linkedin.png" alt="linkedin" class="w-10 h-10 cursor-pointer bg-white" /><div class="rounded-full w-10 invisible"></div></a>
+                <a href="https://codepen.io/koushik27" target="_blank"><img src="assets/codepen.png" alt="codepen" class="w-10 h-10 cursor-pointer bg-white rounded-full" /><div class="rounded-full w-10 invisible"></div></a>
+                <a href="https://www.codingame.com/profile/ff123eb4d78a84d9c5586e5647d2fe2d3230143" target="_blank"><img src="assets/codingame.svg" alt="codingame" class="w-10 h-10 cursor-pointer bg-white" /><div class="rounded-full w-10 invisible"></div></a>
+            </div>
         </section>
         <section id="edu-tree" class="edu-tree flex flex-wrap w-1/2 m-auto">
             <div class="w-1/2"></div>
@@ -130,18 +142,7 @@
             </div>
             <div class="w-1/2 border-l-4 border-black"></div>
         </section>
-        <section id="links" class="profile-links">
-            <p class="text-center  m-4 font-black text-3xl">Profile Links</p>
-            <div class="icons flex justify-around">
-                <a href="https://dev.to/koushikrsk" target="_blank"><img src="assets/devto.svg" alt="dev.to" class="w-10 h-10 cursor-pointer bg-white" /><div class="rounded-full w-10 invisible"></div></a>
-                <a href="https://twitter.com/koushikrsk" target="_blank"><img src="assets/twitter.svg" alt="twitter" class="w-10 h-10 cursor-pointer bg-transparent" /><div class="rounded-full w-10 invisible"></div></a>
-                <a href="https://www.hackerrank.com/Koushik_R" target="_blank"><img src="assets/HackerRank_logo.png" alt="hackerrank" class="w-10 h-10 cursor-pointer bg-transparent" /><div class="rounded-full w-10 invisible"></div></a>
-                <a href="https://github.com/koushik-dev" target="_blank"><img src="assets/github.svg" alt="github" class="w-10 h-10 cursor-pointer bg-white rounded-full" /><div class="rounded-full w-10 invisible"></div></a>
-                <a href="https://in.linkedin.com/in/koushik-r-a36a9390" target="_blank"><img src="assets/linkedin.png" alt="linkedin" class="w-10 h-10 cursor-pointer bg-white" /><div class="rounded-full w-10 invisible"></div></a>
-                <a href="https://codepen.io/koushik27" target="_blank"><img src="assets/codepen.png" alt="codepen" class="w-10 h-10 cursor-pointer bg-white rounded-full" /><div class="rounded-full w-10 invisible"></div></a>
-                <a href="https://www.codingame.com/profile/ff123eb4d78a84d9c5586e5647d2fe2d3230143" target="_blank"><img src="assets/codingame.svg" alt="codingame" class="w-10 h-10 cursor-pointer bg-white" /><div class="rounded-full w-10 invisible"></div></a>
-            </div>
-        </section>
+        
         <p id="hobbies" class="text-center  m-4 font-black text-3xl">Hobbies</p>
         <section class="hobbies flex justify-around">
             <img src="assets/keyboard.svg" class="h-12 w-12" />
