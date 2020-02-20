@@ -2,7 +2,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    background-color: antiquewhite;
+    background-color: white;
 }
 body header {
     background: rgba(59, 59, 59, 0.5)
@@ -12,6 +12,18 @@ body h1 {
 }
 body h1 b {
     background-color: rgba(181, 181, 181, 0.5);
+}
+body .profile-links {
+    height: 40vh;
+}
+.bg {
+    background-color: #bae8ff;
+}
+.block {
+    height: 30vh;
+}
+body .hobbies, body .icons {
+    height: 20vh;
 }
 .profile-links .icons a {
     transition: transform 1s linear;
